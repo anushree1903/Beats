@@ -29,7 +29,7 @@ const CardButtons = () => {
           {checkInLocalData(id, `${type}s`) ? (
             <FaHeart
               size="25px"
-              className="text-red-500 pt-0.5 hover:scale-105 duration-200"
+              className="text-green-500 pt-0.5 hover:scale-105 duration-200"
               onClick={() => {
                 dispatch(removeFromStorage(currentSongData));
                 setRender(!render);

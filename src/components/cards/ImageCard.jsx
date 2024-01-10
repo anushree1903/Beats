@@ -51,7 +51,7 @@ const ImageCard = ({ item, width, height }) => {
         {checkInLocalData(id, `${type}s`) ? (
           <FaHeart
             size="26px"
-            className="absolute bottom-2 left-4 text-red-500 hover:scale-125 duration-300 storage"
+            className="absolute bottom-2 left-4 text-green-500 hover:scale-125 duration-300 storage"
             onClick={() => {
               dispatch(removeFromStorage({ ...item }));
               setRender(!render);
